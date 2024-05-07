@@ -1,12 +1,12 @@
 #pragma once
-typedef char element;		// 스택 원소(element)의 자료형을 char로 정의 
+typedef char element;		
 
-typedef struct  stackNode {	// 스택의 노드를 구조체로 정의
+typedef struct  stackNode {	
 	element data;
 	struct stackNode* link;
 } stackNode;
 
-stackNode* top;				// 스택의 top 노드를 지정하기 위해 포인터 top 선언
+stackNode* top;				
 
 int isStackEmpty();
 void push(element item);
